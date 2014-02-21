@@ -1,6 +1,24 @@
 
 <div class="jumbotron center">
-  <h1>Welcome to Mentorra</h1>
+  <h2>I want this(   ) in this price(    ) + here( where? )</h2>
+  <% if user_signed_in? %>
+  # do something
+  <% else %>
+  	<p>
+       <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+       <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+  	</p>  
+  <% end %>  
+
+</div>
+
+<div class="jumbotron center">
+  <h1>--We connect--</h1>
+</div>
+
+
+<div class="jumbotron center">
+  <h2>I want to sell this(   ) in this price (   )    + here( where? )</h2>
   <% if user_signed_in? %>
   # do something
   <% else %>
